@@ -1,23 +1,52 @@
-<<<<<<< HEAD
-## Getting Started
+# Java Project - Coffee Machine :coffee:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This Java project demonstrates the use of the Strategy design pattern to implement different behaviors for a coffee machine.
 
-## Folder Structure
+## Project Structure
 
-The workspace contains two folders by default, where:
+The project is organized into several classes:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- `CoffeeMachine`: The main class representing the coffee machine.
+- `CoffeeMachineBehave`: An interface defining the behavior of the coffee machine.
+- `CoffeeExpresso`, `AddingSugar`, `AddingMilk`, `AddingChocolate`: Classes implementing different coffee machine behaviors.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## How to Run
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+To run the project, execute the `Test` class, which contains the `main` method. This will demonstrate the coffee machine making various types of coffee with different behaviors.
 
-## Dependency Management
+## Class Diagram
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-=======
-# java_coffeemachine
-This project was built in Java using the Strategy of Design Patterns
->>>>>>> f8e9c4e570b3eb165a7b09869b92537849046851
+```mermaid
+
+classDiagram
+  class CoffeeMachine {
+    +setCoffeeMachineBehave(CoffeeMachineBehave)
+    +makingCoffee()
+  }
+
+  class CoffeeMachineBehave {
+    +makingCoffee()
+  }
+
+  class CoffeeExpresso {
+    +makingCoffee()
+  }
+
+  class AddingSugar {
+    +makingCoffee()
+  }
+
+  class AddingMilk {
+    +makingCoffee()
+  }
+
+  class AddingChocolate {
+    +makingCoffee()
+  }
+
+
+  CoffeeMachine <|-- CoffeeMachineBehave
+  CoffeeMachineBehave <|-- CoffeeExpresso
+  CoffeeMachineBehave <|-- AddingSugar
+  CoffeeMachineBehave <|-- AddingMilk
+  CoffeeMachineBehave <|-- AddingChocolate
