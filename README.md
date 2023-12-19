@@ -14,6 +14,17 @@ The project is organized into several classes:
 
 To run the project, execute the `Test` class, which contains the `main` method. This will demonstrate the coffee machine making various types of coffee with different behaviors.
 
+## Contributing 😄
+
+I'm sharing this project to foster collaboration and knowledge sharing within the coding community. If you have any suggestions, improvements, or feature requests, please feel free to open an issue or submit a pull request. Your contributions will help me enhance my skills and make the project more enjoyable.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). You are welcome to use, modify, and distribute the code as needed.
+
+
+Thank you for checking out my second coding project on GitHub. I hope you find it engaging and inspiring. Happy coding!
+
 ## Class Diagram
 
 ```mermaid
